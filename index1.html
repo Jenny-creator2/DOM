@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+    <input id="imageUrl" placeholder="Введите URL картинки">
+    <button onclick="changeImage()">Поменять картинку</button>
+    <img id="image" src="img/1.jpg" alt="Image" width="300">
+    <script>
+        function changeImage() {
+            const newUrl = document.getElementById('imageUrl').value;
+            const img = document.getElementById('image');
+            if (newUrl) {
+                img.src = newUrl;
+            } else {
+                alert("Введите корректный URL!");
+            }
+        }
+    </script>
+</body>
+</html>

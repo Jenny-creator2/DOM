@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="size" placeholder="Толщина">
+    <input id="color" placeholder="Цвет">
+    <button onclick="updateBorder()">Применить</button>
+    <table id="table" style="border: 1px solid black; width: 50%; margin-top: 20px;">
+        <tr>
+            <td>Поле 1</td>
+            <td>Поле 2</td>
+        </tr>
+        <tr>
+            <td>Поле 3</td>
+            <td>Поле 4</td>
+        </tr>
+    </table>
+    <script>
+        function updateBorder() {
+            const table = document.getElementById('table');
+            table.style.border = document.getElementById('size').value + ' solid ' + document.getElementById('color').value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+</head>
+<body>
+    <input type="color" name="" id="bgColor">
+    <input type="color" name="" id="fgColor">
+    <input type="button" value="change" id="colors">
+    <div>Hello</div>
+    <script>
+        document.querySelector("#colors").onclick=function(){
+            document.body.style.backgroundColor=document.querySelector("#bgColor").value;
+            document.body.style.color=document.querySelector("#fgColor").value;
+        }
+    </script>
+</body>
+</html>

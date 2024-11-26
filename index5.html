@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5</title>
+</head>
+<body>
+    <input id="num1">
+    <input id="num2">
+    <button onclick="Sum()">Посчитать</button>
+    <p>Результат: <span id="result"></span></p>
+    <script>
+        function Sum() {
+            const a = +document.getElementById('num1').value;
+            const b = +document.getElementById('num2').value;
+            const result = document.getElementById('result');
+        
+        if (!isNaN(a) && !isNaN(b)) {
+            result.textContent = a + b;
+        } else {
+            result.textContent = 'Пожалуйста введите числа';
+        }
+    }
+    </script>
+</body>
+</html>
